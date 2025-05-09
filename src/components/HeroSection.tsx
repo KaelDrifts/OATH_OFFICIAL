@@ -19,7 +19,7 @@ const HeroSection = () => {
           A protocol for verifiable AI compute — decentralized, auditable, and paid.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button className="bg-[#68452b] border-[#542706] text-white !retro-blink-none">
+          <Button className="bg-[#693911] border-[#4b2004] text-white !retro-blink-none">
               <Lock size={16} className="mr-2" />
               Take the OATH
             </Button>
