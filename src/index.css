@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Press Start 2P', system-ui;
+  }
+  
+  img {
+    image-rendering: pixelated;
+  }
+}
+
+@layer components {
+  .retro-button {
+    @apply border-4 border-[#3f1c08] bg-[#7eff9e] text-[#3f1c08] px-6 py-3 
+           shadow-[4px_4px_0_#3f1c08] hover:shadow-[2px_2px_0_#3f1c08] 
+           hover:translate-x-[2px] hover:translate-y-[2px] transition-all 
+           active:shadow-none active:translate-x-[4px] active:translate-y-[4px];
+  }
+
+  .retro-card {
+    @apply border-4 border-[#3f1c08] bg-white/90 shadow-[8px_8px_0_#3f1c08];
+  }
+
+  .pixel-corners {
+    clip-path: polygon(
+      0 4px, 4px 4px, 4px 0,
+      calc(100% - 4px) 0, calc(100% - 4px) 4px, 100% 4px,
+      100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%,
+      4px 100%, 4px calc(100% - 4px), 0 calc(100% - 4px)
+    );
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+  }
+
+  .retro-blink {
+    animation: blink 2s steps(2) infinite;
+  }
+
+  .retro-blink-none {
+    animation: none;
+  }
+
+  .hover-effect {
+    @apply transition-transform hover:scale-105;
+  }
+}
