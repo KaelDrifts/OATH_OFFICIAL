@@ -77,7 +77,7 @@ const NavBar = () => {
           </nav>
           
           <div className="hidden md:block">
-           <Button className="bg-[#693911] border-[#4b2004] text-white !retro-blink-none">
+           <Button className="bg-[#693911] border-[#4a2609] text-white !retro-blink-none">
               <Lock size={16} className="mr-2" />
               Join Network
             </Button>
